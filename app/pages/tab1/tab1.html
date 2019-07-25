@@ -11,7 +11,7 @@
           </ion-item>       
       </ion-list>
 
-<!--
+      <!--
       <ion-fab vertical="top" horizontal="end" slot="fixed">
         <ion-fab-button>
           <ion-icon name="add"></ion-icon>
@@ -19,11 +19,14 @@
       </ion-fab>
       -->
 
-  <ion-fab>
-    <ion-fab-button>
-      <ion-icon></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
 
+      <ion-fab bottom right> 
+        <button ion-fab>Contact</button> 
+
+        <button ion-fab (click)="facebook()">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </button>     
+           
+       </ion-fab> 
 
 </ion-content>
