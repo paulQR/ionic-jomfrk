@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { DeseosService } from '../../services/deseos.service';
 
 @Component({
   selector: 'page-tab1',
@@ -7,7 +7,7 @@ import { NavController } from 'ionic-angular';
 })
 export class Tab1Page {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public deseosService: DeseosService) {
 
   }
 

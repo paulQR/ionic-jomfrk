@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
-import { Tab1Page } from '../tab1/tab1';
 import { Tab2Page } from '../tab2/tab2';
+import { Tab1Page } from '../tab1/tab1';
 
 @Component({
   templateUrl: 'tabs.html'
