@@ -18,23 +18,31 @@
         </ion-fab-button>
       </ion-fab>
       -->
-
-
       <ion-fab bottom right> 
         <!--<button ion-fab>Contact</button> 
         <button ion-fab (click)="facebook()">
           <ion-icon name="logo-facebook"></ion-icon>
         </button> 
-        -->   
+        --> 
+      <!--
+          <ion-tabs color="dark">
+            <ion-tab [root]="tab1Root" tabTitle="Pendientes" tabIcon="clipboard"></ion-tab>
+            <ion-tab [root]="tab2Root" tabTitle="Terminados" tabIcon="done-all"></ion-tab>
+          </ion-tabs>
+        -->         
+        <!-- 
         <button ion-fab style="background-color: #7044ff !important">
           <ion-icon name="add"></ion-icon>
           <ion-router>
           <ion-route url="/agregar" component="page-agregar"></ion-route>
           </ion-router>
         </button>  
+        -->
 
-       </ion-fab> 
+        <button ion-fab style="background-color: #7044ff !important" [root]="agregarRoot">
+          <ion-icon name="add"></ion-icon>
+        </button>  
 
-         
+       </ion-fab>   
 
 </ion-content>

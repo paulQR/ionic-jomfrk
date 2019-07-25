@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DeseosService } from '../../services/deseos.service';
+import { AgregarPage } from '../agregar/agregar';
 
 @Component({
   selector: 'page-tab1',
@@ -7,6 +8,7 @@ import { DeseosService } from '../../services/deseos.service';
 })
 export class Tab1Page {
 
+  agregarRoot = AgregarPage;
   constructor(public deseosService: DeseosService) {
 
       
