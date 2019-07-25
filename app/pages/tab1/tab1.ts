@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DeseosService } from '../../services/deseos.service';
+import { App } from 'ionic-angular';
 
 @Component({
   selector: 'page-tab1',
@@ -7,8 +8,9 @@ import { DeseosService } from '../../services/deseos.service';
 })
 export class Tab1Page {
 
-  constructor(public deseosService: DeseosService) {
+  constructor(private app: App, public deseosService: DeseosService) {
 
+      app.setScrollDisabled(true);
   }
 
 }

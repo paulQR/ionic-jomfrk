@@ -4,7 +4,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content style="background: #222428 !important;">
+<ion-content style="background: #222428 !important; overflow:hidden !important;">
       <ion-list style="background-color: #222428 !important;">  
           <ion-item *ngFor="let lista of deseosService.listas" color="dark">
               <ion-label>{{lista.titulo}}</ion-label>
@@ -21,12 +21,15 @@
 
 
       <ion-fab bottom right> 
-        <button ion-fab>Contact</button> 
-
+        <!--<button ion-fab>Contact</button> 
         <button ion-fab (click)="facebook()">
           <ion-icon name="logo-facebook"></ion-icon>
-        </button>     
-           
+        </button>  
+        -->   
+        <button ion-fab>
+          <ion-icon name="add"></ion-icon>
+        </button>  
+
        </ion-fab> 
 
 </ion-content>
