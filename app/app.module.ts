@@ -11,6 +11,13 @@ import { AgregarPage } from './pages/agregar/agregar';
 // servicios
 import { DeseosService } from './services/deseos.service';
 
+/*
+// importar rutas
+import { ROUTES } from './app.routes';
+
+//<--- Modulo de rutas
+import { RouterModule } from '@angular/router';
+*/
 @NgModule({
   declarations: [
     MyApp,
